@@ -1,3 +1,4 @@
+<div>
 <mat-toolbar class="menu">
     <h3>Smart Ventes</h3>
    
@@ -26,21 +27,26 @@
   </button>
   </mat-toolbar>
   
-  <mat-sidenav-container class="example-container">
-    <mat-sidenav opened mode="side">
+
+<mat-sidenav-container  class="example-container">
+    <mat-sidenav opened mode="side"  class="example">
         <mat-nav-list  class="list-horizontal">
             <mat-list-item>
-                <a [routerLink]="['/']">Accauil</a>
+                <a [routerLink]="['/produit']"> Acceuil </a>
               </mat-list-item>
               <mat-list-item>
-                <a [routerLink]="['/']">About</a>
+                <a [routerLink]="['/produit']">Gestion Produit</a>
               </mat-list-item>
               <mat-list-item>
-                <a [routerLink]="['/']">Contact Us</a>
-            </mat-list-item>
+                <a [routerLink]="['/listFr']">Gestion Fournisseur</a>
+              </mat-list-item>
+        
         </mat-nav-list> 
     </mat-sidenav>
+    <div class="h ">
+      <router-outlet></router-outlet>
+    </div>
     
   </mat-sidenav-container>
   
-  <router-outlet></router-outlet>
+    </div>

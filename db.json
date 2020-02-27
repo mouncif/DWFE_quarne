@@ -7,7 +7,7 @@
       "prixBase": "24433",
       "prixVente": 0,
       "seuil_max_remise": "252",
-      "unite_produit": "test",
+      "unite_produit": "teteee",
       "img_produit": "test",
       "quantite_initiale": "242",
       "quantite_actuel": "2333"
@@ -23,6 +23,18 @@
       "img_produit": "NN",
       "quantite_initiale": "3553",
       "quantite_actuel": "636"
+    },
+    {
+      "id": 3,
+      "nom_court": "gtztt",
+      "nom_produit": "prd1",
+      "prixBase": "525",
+      "prixVente": 0,
+      "seuil_max_remise": "727",
+      "unite_produit": "254",
+      "img_produit": "JHH",
+      "quantite_initiale": "626",
+      "quantite_actuel": "223"
     }
   ],
   "fournisseurs": [
@@ -41,7 +53,7 @@
       "id": 2,
       "nom_court": "tete",
       "nom": "ttet",
-      "ville": "ttztt",
+      "ville": "test",
       "adresse": "EHH",
       "telMobile": "377647",
       "telFix": "36363661",
@@ -50,7 +62,7 @@
     },
     {
       "id": 3,
-      "nom_court": "fr",
+      "nom_court": "iii",
       "nom": "fr",
       "ville": "fr",
       "adresse": "rz",
@@ -58,6 +70,17 @@
       "telFix": "763536",
       "Fax": "757357",
       "email": "fr@D.d"
+    },
+    {
+      "id": 4,
+      "nom_court": "test",
+      "nom": "test",
+      "ville": "BM",
+      "adresse": "adresee",
+      "telMobile": "062736636",
+      "telFix": "7088277",
+      "Fax": "0288272",
+      "email": "ma@z.com"
     }
   ]
 }
