@@ -3,8 +3,7 @@
    
     
     <span id="btn">
-      <button mat-raised-button color="primary" [routerLink]="['produit']">Gérer Produit</button>
-      <button mat-raised-button color="warn" [routerLink]="['listFr']">Gérer Fournisseur</button>
+      
     </span>
   
     <span class="fill-space"></span>
@@ -12,18 +11,11 @@
       <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span>Redial</span>
-      </button>
-      <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
-        <span>Check voice mail</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon class="ic">notifications_off</mat-icon>
-        <span>Disable alerts</span>
-      </button>
+      <button  mat-menu-item  [routerLink]="['produit']">Gérer Produit</button>
+
+      <button  mat-menu-item [routerLink]="['listFr']">Gérer Fournisseur</button>
+
+     
     </mat-menu>
     
     <button mat-button routerLink="/">
