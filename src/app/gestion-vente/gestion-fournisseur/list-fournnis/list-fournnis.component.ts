@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FournisseurComponent } from '../fournisseur/fournisseur.component';
 import { Fournisseur } from 'src/app/model/fournisseur.model';
 import { FournisseurService } from 'src/app/services/fournisseur.service';
-import { MatDialogRef } from '@angular/material';
+import { MatDialogRef, MatTableDataSource, MatDialog, MatSnackBar } from '@angular/material';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,7 +14,7 @@ export class ListFournnisComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(FournisseurComponent, {
-    width: '500px'
+    width: '1000px'
   });
   
   dialogRef.afterClosed().subscribe(result => {

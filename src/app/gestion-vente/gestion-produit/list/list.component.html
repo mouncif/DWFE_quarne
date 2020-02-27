@@ -1,6 +1,13 @@
 <mat-form-field style="width: 100%;">
     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
 </mat-form-field>
+<button mat-raised-button (click)="openDialogg()" class="add">
+    <mat-icon>library_add</mat-icon>
+    Ajouter Prouduit</button>
+
+<mat-form-field style="width: 100%;">
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+</mat-form-field>
 
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 

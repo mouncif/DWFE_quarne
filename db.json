@@ -12,5 +12,18 @@
       "quantite_initiale": "242",
       "quantite_actuel": "222"
     }
+  ],
+  "fournisseurs": [
+    {
+      "id": 1,
+      "nom_court": "tesr",
+      "nom": "tst",
+      "ville": "test",
+      "adresse": "GTZT",
+      "telMobile": "737763838",
+      "telFix": "878388",
+      "Fax": "GHZ",
+      "email": "HZH@S.s"
+    }
   ]
 }

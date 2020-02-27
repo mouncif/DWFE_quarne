@@ -10,7 +10,7 @@ export class FournisseurService {
 
   constructor(private http:HttpClient) { }
 
-  private url = "http://localhost:3000/produits"
+  private url = "http://localhost:3000/fournisseurs"
 
 
   form:FormGroup = new FormGroup({

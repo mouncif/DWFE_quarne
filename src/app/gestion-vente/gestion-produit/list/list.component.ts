@@ -26,6 +26,19 @@ export class ListComponent implements OnInit {
     this.fetchElements();
   }
 
+  openDialogg(): void {
+    const dialogRef = this.dialog.open(ProduitComponent, {
+    width: '700px'
+    });
+    dialogRef.afterClosed().subscribe(result => {
+    this.fetch();
+    
+    });
+    this.fetch();
+    
+    }
+    
+
   fetchElements() {
     this.service.findAll().subscribe(res => {
       if (!res) { return; }
