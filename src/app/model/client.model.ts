@@ -1,4 +1,5 @@
 export interface Client {
+    id?:number;
     nom_Cl: string;
     prenom_Cl: string;
     statut: string;
@@ -7,4 +8,5 @@ export interface Client {
     email: string;
     adresse: string;
     ville: string;
+
 }

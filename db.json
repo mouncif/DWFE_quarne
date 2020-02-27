@@ -1,0 +1,16 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "nom_court": "test",
+      "nom_produit": "test",
+      "prixBase": "24433",
+      "prixVente": 0,
+      "seuil_max_remise": "252",
+      "unite_produit": "test",
+      "img_produit": "test",
+      "quantite_initiale": "242",
+      "quantite_actuel": "222"
+    }
+  ]
+}

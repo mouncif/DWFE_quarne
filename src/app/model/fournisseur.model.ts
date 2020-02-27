@@ -1,4 +1,5 @@
 export interface Fournisseur {
+    id?:number;
     nom: String;
     nom_court: String;
     ville : String;
