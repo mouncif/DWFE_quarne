@@ -10,11 +10,8 @@ import { ListFournnisComponent } from './gestion-vente/gestion-fournisseur/list-
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
-  {path:'produit', component:GestionProduitComponent},
-  {path:'addProduit', component:ProduitComponent},
-  {path:'fr', component:GestionProduitComponent},
+  {path:'produit', component:ListComponent},
   {path:'listFr', component:ListFournnisComponent},
-  {path:'produit/ListProduit', component:ListComponent},
 
 
 ];

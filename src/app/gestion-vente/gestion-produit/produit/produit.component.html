@@ -1,5 +1,5 @@
 <form [formGroup]="service.form" class="normal-form" (submit)="onSubmit()">
-    <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-list cols="2" rowHeight="400px">
         <mat-grid-tile>
             <div class="controles-container">
                 <input type="hidden" formControlName="id">
@@ -17,6 +17,10 @@
                 <mat-form-field>
                     <input formControlName="seuil_max_remise" matInput placeholder="seuil max remise">
                 </mat-form-field>
+            </div>
+            </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class="controles-container">
                 <mat-form-field>
                     <input formControlName="unite_produit" matInput placeholder="unite produit">
                 </mat-form-field>
@@ -29,14 +33,14 @@
                 <mat-form-field>
                     <input formControlName="quantite_actuel" matInput placeholder="quantite actuel">
                 </mat-form-field>
-            </div>
+            
     
               
-                <div class="button-row">
+    
                     <button mat-raised-button color="primary" type="submit" [disabled]="service.form.invalid">Submit</button>
                     <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
-                </div>
-      
+                
+      </div>
         </mat-grid-tile>
     </mat-grid-list>
 </form>

@@ -1,5 +1,5 @@
 <form [formGroup]="service.form" class="normal-form" (submit)="onSubmit()">
-    <mat-grid-list cols="2" rowHeight="600px">
+    <mat-grid-list cols="2" rowHeight="400px">
         <mat-grid-tile>
             <div class="controles-container">
                 <input type="hidden" formControlName="id">
@@ -18,6 +18,10 @@
                 <mat-form-field>
                     <input formControlName="telMobile" matInput placeholder="telMobile">
                 </mat-form-field>
+                </div>
+        </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="controles-container">
                 <mat-form-field>
                     <input formControlName="adresse" matInput placeholder="adresse">
                 </mat-form-field>

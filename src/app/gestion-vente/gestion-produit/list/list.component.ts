@@ -28,7 +28,7 @@ export class ListComponent implements OnInit {
 
   openDialogg(): void {
     const dialogRef = this.dialog.open(ProduitComponent, {
-    width: '700px'
+    width: '600px'
     });
     dialogRef.afterClosed().subscribe(result => {
     this.fetch();

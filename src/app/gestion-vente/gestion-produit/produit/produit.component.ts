@@ -42,7 +42,7 @@ add(){
 }
 
 update(){
-  this.service.update(this.user).subscribe(()=>this.router.navigateByUrl("produit/ListProduit"));
+  this.service.update(this.user).subscribe(()=>this.router.navigateByUrl("produit"));
 }
 
 
@@ -68,7 +68,7 @@ onClear(){
        console.log(this.user);
        this.update();
        this.service.form.reset(); 
-       this.router.navigateByUrl('produit/ListProduit');
+       this.router.navigateByUrl('produit');
        this.onNoClick();
      }
      this.service.initializeFormGroup();

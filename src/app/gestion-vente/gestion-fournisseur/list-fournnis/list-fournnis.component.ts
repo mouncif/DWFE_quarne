@@ -14,7 +14,7 @@ export class ListFournnisComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(FournisseurComponent, {
-    width: '1000px'
+    width: '600px'
   });
   
   dialogRef.afterClosed().subscribe(result => {
@@ -61,7 +61,7 @@ export class ListFournnisComponent implements OnInit {
   
   openDialogg(): void {
   const dialogRef = this.dialog.open(FournisseurComponent, {
-  width: '700px'
+  width: '600px'
   });
   dialogRef.afterClosed().subscribe(result => {
   this.fetch();

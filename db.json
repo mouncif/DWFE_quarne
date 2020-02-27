@@ -10,13 +10,25 @@
       "unite_produit": "test",
       "img_produit": "test",
       "quantite_initiale": "242",
-      "quantite_actuel": "222"
+      "quantite_actuel": "2333"
+    },
+    {
+      "id": 2,
+      "nom_court": "trs",
+      "nom_produit": "test",
+      "prixBase": "2442",
+      "prixVente": 0,
+      "seuil_max_remise": "255",
+      "unite_produit": "JEH",
+      "img_produit": "NN",
+      "quantite_initiale": "3553",
+      "quantite_actuel": "636"
     }
   ],
   "fournisseurs": [
     {
       "id": 1,
-      "nom_court": "tesr",
+      "nom_court": "zggz",
       "nom": "tst",
       "ville": "test",
       "adresse": "GTZT",
