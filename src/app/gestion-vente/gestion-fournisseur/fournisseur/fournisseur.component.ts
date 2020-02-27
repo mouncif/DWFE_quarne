@@ -75,6 +75,8 @@ onClear(){
      }
      this.service.initializeFormGroup();
    }
+   this. onNoClick();
+
  }
 
 }

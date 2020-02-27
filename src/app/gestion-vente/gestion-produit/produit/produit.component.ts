@@ -41,6 +41,7 @@ add(){
   });
 }
 
+
 update(){
   this.service.update(this.user).subscribe(()=>this.router.navigateByUrl("produit"));
 }
@@ -73,6 +74,8 @@ onClear(){
      }
      this.service.initializeFormGroup();
    }
+   this. onNoClick();
+
  }
 
 }
