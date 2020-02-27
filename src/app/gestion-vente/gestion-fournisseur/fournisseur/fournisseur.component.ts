@@ -73,6 +73,8 @@ onClear(){
        this.router.navigateByUrl('/listFr');
        this.onNoClick();
      }
+     this.router.navigateByUrl('/listFr');
+
      this.service.initializeFormGroup();
    }
    this. onNoClick();

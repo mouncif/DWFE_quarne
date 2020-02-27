@@ -69,11 +69,13 @@ onClear(){
        console.log(this.user);
        this.update();
        this.service.form.reset(); 
-       this.router.navigateByUrl('produit');
+       this.router.navigateByUrl('/produit');
        this.onNoClick();
      }
      this.service.initializeFormGroup();
    }
+   this.router.navigateByUrl('/produit');
+
    this. onNoClick();
 
  }
