@@ -1,0 +1,16 @@
+<mat-toolbar class="toolbar" >
+    <h3>{{title}}</h3>
+</mat-toolbar>
+
+<mat-tab-group #tabGroup (selectedTabChange)="tabChanged($event)" color="accent">
+    <mat-tab label="Gestion Client"> 
+        <app-gestion-client></app-gestion-client>
+    </mat-tab>
+    <mat-tab label="Gestion Fournisseur"> 
+       <app-gestion-fournisseur></app-gestion-fournisseur>
+    </mat-tab>
+    <mat-tab label="Gestion Produit"> 
+        <app-gestion-produit></app-gestion-produit>
+     </mat-tab>
+
+  </mat-tab-group>

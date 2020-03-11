@@ -2,13 +2,13 @@
   "produits": [
     {
       "id": 1,
-      "nom_court": "test",
-      "nom_produit": "test",
+      "nom_court": "Sum Cam",
+      "nom_produit": "Sumsung camera",
       "prixBase": "24433",
-      "prixVente": 0,
+      "prixVente": "33344",
       "seuil_max_remise": "252",
-      "unite_produit": "teteee",
-      "img_produit": "test",
+      "unite_produit": "unite",
+      "img_produit": "https://www.samsung.com/global/microsite/galaxycamera/images/design/img_nx_product_1.jpg",
       "quantite_initiale": "242",
       "quantite_actuel": "2333"
     },
@@ -17,70 +17,145 @@
       "nom_court": "trs",
       "nom_produit": "test",
       "prixBase": "2442",
-      "prixVente": 0,
+      "prixVente": "3336",
       "seuil_max_remise": "255",
       "unite_produit": "JEH",
-      "img_produit": "NN",
+      "img_produit": "https://shop.ee.co.uk/medias/iphone-11-64gb-purple-d1-Format-960?context=bWFzdGVyfHJvb3R8NTYyMjh8aW1hZ2UvanBlZ3xzeXMtbWFzdGVyL3Jvb3QvaDI1L2g5NS85Mzk2NTc4ODc3NDcwL2lwaG9uZS0xMS02NGdiLXB1cnBsZS1kMV9Gb3JtYXQtOTYwfGUwMGVjZDMyYmM2ZjBlY2QyNTYyMWJmM2M0ODA2YjM4ZDIxMzZlZjU2YjMzZDY1YzY1ZGFhOTZiOWExNmVlMjE",
       "quantite_initiale": "3553",
       "quantite_actuel": "636"
     },
     {
-      "id": 3,
-      "nom_court": "gtztt",
-      "nom_produit": "prd1",
-      "prixBase": "525",
-      "prixVente": 0,
-      "seuil_max_remise": "727",
-      "unite_produit": "254",
-      "img_produit": "JHH",
-      "quantite_initiale": "626",
-      "quantite_actuel": "223"
+      "id": 4,
+      "nom_court": "produit",
+      "nom_produit": "TETT",
+      "prixBase": "4244",
+      "prixVente": "223",
+      "seuil_max_remise": "5255",
+      "unite_produit": "5555",
+      "img_produit": "https://virginmegastore.ma/wp-content/uploads/2017/02/coque-macbook-pro-13-touchbar-smartshell-clear.jpg",
+      "quantite_initiale": "5255",
+      "quantite_actuel": "266"
     }
   ],
   "fournisseurs": [
     {
       "id": 1,
-      "nom_court": "zggz",
-      "nom": "tst",
-      "ville": "test",
-      "adresse": "GTZT",
-      "telMobile": "737763838",
-      "telFix": "878388",
-      "Fax": "GHZ",
-      "email": "HZH@S.s"
+      "nom_court": "Amz",
+      "nom": "Amzil ahmed",
+      "ville": "BM",
+      "adresse": "VVVVVVVVVVV",
+      "telMobile": "07377777",
+      "telFix": "07377777",
+      "Fax": "07377777",
+      "email": "amzil@sss.s"
     },
     {
       "id": 2,
-      "nom_court": "tete",
-      "nom": "ttet",
-      "ville": "test",
-      "adresse": "EHH",
-      "telMobile": "377647",
-      "telFix": "36363661",
-      "Fax": "736377",
-      "email": "JJ@/co"
-    },
-    {
-      "id": 3,
-      "nom_court": "iii",
-      "nom": "fr",
-      "ville": "fr",
-      "adresse": "rz",
-      "telMobile": "3553562",
-      "telFix": "763536",
-      "Fax": "757357",
-      "email": "fr@D.d"
+      "nom_court": "Nask",
+      "nom": "Nassiki Med amine",
+      "ville": "Agadir",
+      "adresse": "VVVVV ccccc",
+      "telMobile": "0773337777",
+      "telFix": "07777337777",
+      "Fax": "0777337777",
+      "email": "med@gmail.com"
     },
     {
       "id": 4,
-      "nom_court": "test",
-      "nom": "test",
+      "nom_court": "Req",
+      "nom": "Omar Res",
       "ville": "BM",
-      "adresse": "adresee",
-      "telMobile": "062736636",
-      "telFix": "7088277",
-      "Fax": "0288272",
-      "email": "ma@z.com"
+      "adresse": "adresee ",
+      "telMobile": "06343434",
+      "telFix": "06343434",
+      "Fax": "06343434",
+      "email": "omar@z.com"
+    },
+    {
+      "id": 8,
+      "nom_court": "Bo",
+      "nom": "Mina bo",
+      "ville": "BM",
+      "adresse": "adress",
+      "telMobile": "0928822772",
+      "telFix": "0928822772",
+      "Fax": "0928822772",
+      "email": "mina@.dll.do"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "nom_Cl": "Allaoui",
+      "prenom_Cl": "Ali",
+      "statut": "statu1",
+      "photo": "https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg",
+      "tel": "0763737383",
+      "email": "ali@gmail.com",
+      "adresse": "xxxxxxxxx",
+      "ville": "BM"
+    },
+    {
+      "id": 2,
+      "nom_Cl": "yaghfouri",
+      "prenom_Cl": "Hajar",
+      "statut": "statut2",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSNngF0RFPjyGl4ybo78-XYxxeap88Nvsyj1_txm6L4eheH8ZBu",
+      "tel": "02882828",
+      "email": "hajar@gmail.com",
+      "adresse": "wwwwwwww",
+      "ville": "Rabat"
+    },
+    {
+      "id": 7,
+      "nom_Cl": "Abidi",
+      "prenom_Cl": "Ahmed",
+      "statut": "satut3",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRr3QZAb7zfFhrw7JKUu8hGu6n9e3IFW_R1A74xF_Eav7KNT0iX",
+      "tel": "062777777",
+      "email": "ahmed@gmail.com",
+      "adresse": "xxxxxxxxxx",
+      "ville": "Tanger"
+    },
+    {
+      "id": 8,
+      "nom_Cl": "Del",
+      "prenom_Cl": "Jamila",
+      "statut": "statut4",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGVB90pbVQKtH7eqNoaMI-fHgjAmgAj2S01Dzee6J_3AOEcyTF",
+      "tel": "066666666",
+      "email": "jamila@gmail.com",
+      "adresse": "XXXXXXXXXX",
+      "ville": "Rabat"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "profile": "Admin",
+      "statut": "076373d",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0Zq2XTzXmYGmzA9A34g00s7dDZQRKZtot0NGbja29zaDptKSW",
+      "email": "admin@gmail.com",
+      "username": "admin1",
+      "password": "ddddddd"
+    },
+    {
+      "id": 2,
+      "profile": "User",
+      "statut": "statut2",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGp433mMvx34GZC8TGtgClcK-OZyCfHJd0XeH4GVBMlirSACyv",
+      "email": "user@gmail.com",
+      "username": "user1",
+      "password": "z11111"
+    },
+    {
+      "id": 4,
+      "profile": "Editor",
+      "statut": "statut3",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSocqnJLDHl2Yoyfb13skKwM9F3Izcl17CMV3WbLIsbhexNeV_",
+      "email": "editor@gm.com",
+      "username": "editor1",
+      "password": "1234"
     }
   ]
 }

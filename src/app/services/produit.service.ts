@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Produit } from '../model/produit.model';
+import { Produit } from '../models/produit.model';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

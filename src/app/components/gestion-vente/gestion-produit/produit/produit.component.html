@@ -1,0 +1,52 @@
+<form [formGroup]="service.form" class="normal-form" (submit)="onSubmit()">
+    <mat-grid-list cols="2" rowHeight="400px">
+        <mat-grid-tile>
+            <div class="controles-container">
+                <input type="hidden" formControlName="id">
+
+                <img src="assets/product.png" style="height: 100px;">
+                <div>
+                    <mat-form-field floatLabel='never'>
+                        <input matInput type="text" formControlName="img_produit" placeholder="Lien d'image">
+                    </mat-form-field>
+                </div>
+                <mat-form-field>
+                    <input formControlName="nom_produit" matInput placeholder="Nom produit*">
+                    <mat-error>This field is mandatory.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="nom_court" matInput placeholder="Nom court">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input formControlName="prixBase" matInput placeholder="Prix Base">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="prixVente" matInput placeholder="Prix Vente">
+                </mat-form-field>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="controles-container">
+                <mat-form-field>
+                    <input formControlName="seuil_max_remise" matInput placeholder="Seuil max remise">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="unite_produit" matInput placeholder="Unite produit">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input formControlName="quantite_initiale" matInput placeholder="Quantite initiale">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="quantite_actuel" matInput placeholder="Quantite actuelle">
+                </mat-form-field>
+
+                <div>
+                    <button mat-raised-button color="primary" type="submit">Submit</button>
+                    <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</form>

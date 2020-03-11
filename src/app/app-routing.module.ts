@@ -1,19 +1,16 @@
-
-
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GestionProduitComponent } from './gestion-vente/gestion-produit/gestion-produit.component';
-import { ProduitComponent } from './gestion-vente/gestion-produit/produit/produit.component';
-import { ListComponent } from './gestion-vente/gestion-produit/list/list.component';
-import { ListFournnisComponent } from './gestion-vente/gestion-fournisseur/list-fournnis/list-fournnis.component';
+import { GestionProduitComponent } from './components/gestion-vente/gestion-produit/gestion-produit.component';
+import { GestionFournisseurComponent } from './components/gestion-vente/gestion-fournisseur/gestion-fournisseur.component';
+import { GestionClientComponent } from './components/gestion-vente/gestion-client/gestion-client.component';
+import { UtilisateurDroitsComponent } from './components/utilisateur-droits/utilisateur-droits.component';
+import { GestionVenteComponent } from './components/gestion-vente/gestion-vente.component';
 
 
 const routes: Routes = [
-  {path:'', redirectTo:'produit', pathMatch:'full'},
-  {path:'produit', component:ListComponent},
-  {path:'listFr', component:ListFournnisComponent},
-
-
+  {path:'', redirectTo:'vente', pathMatch:'full'},
+  {path:'user', component:UtilisateurDroitsComponent},
+  {path:'vente', component:GestionVenteComponent},
 ];
 
 @NgModule({

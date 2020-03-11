@@ -1,48 +1,43 @@
 import { Injectable } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Client } from '../models/client.model';
 import { HttpClient } from '@angular/common/http';
+import { User } from '../models/user.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ClientService {
+export class UserService {
 
   constructor(private http:HttpClient) { }
 
-  private url = "http://localhost:3000/clients"
-
+  private url = "http://localhost:3000/users"
 
   form:FormGroup = new FormGroup({
     id: new FormControl(null),
-    nom_Cl: new FormControl('',Validators.required),
-    prenom_Cl: new FormControl('',Validators.required),
+    profile: new FormControl('',Validators.required),
     statut: new FormControl('',Validators.required),
-    photo: new FormControl('',),
-    tel: new FormControl('',Validators.required),
+    photo: new FormControl(''),
     email: new FormControl('',[Validators.required,Validators.email]),
-    adresse: new FormControl('',Validators.required),
-    ville: new FormControl('',Validators.required)
+    username: new FormControl('',Validators.required),
+    password: new FormControl('',Validators.required)
   });
 
   initializeFormGroup(){
     this.form.setValue({
       id:null,
-      prenom_Cl:'',
-      nom:'',
+      profile:'',
       statut:'',
-      tel:'',
       photo:'',
-      ville:'',
-      adresse:'',
-      email :'',
+      email:'',
+      username:'',
+      password:'',
     });
   }
   findAll(){
-    return this.http.get<Client[]>(this.url);
+    return this.http.get<User[]>(this.url);
   }
   add(user){
-    return this.http.post<Client>(this.url, user);
+    return this.http.post<User>(this.url, user);
   }
   delete(id){
     return this.http.delete(`${this.url}/${id}`);

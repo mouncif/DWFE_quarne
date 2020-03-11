@@ -1,0 +1,25 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened class="example-sidenav" class="sdnav">
+    <mat-sidenav-container class="sidenav-container" class="sdnav" >
+        <mat-sidenav-content>
+           
+            <mat-nav-list  class="list-horizontal">
+               
+                <mat-list-item class="titre" [routerLink]="['/vente']" routerLinkActive="active-list-item">
+                    Gestion Vente
+                </mat-list-item>
+                <mat-list-item class="titre" [routerLink]="['/user']" routerLinkActive="active-list-item">
+                    Gestion Utilisateurs
+                </mat-list-item>
+              
+        </mat-nav-list> 
+  
+    
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+  </mat-drawer>
+  <mat-drawer-content class="content">
+    <router-outlet></router-outlet>
+
+  </mat-drawer-content>
+</mat-drawer-container>

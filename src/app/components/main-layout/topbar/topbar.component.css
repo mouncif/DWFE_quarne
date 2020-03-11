@@ -1,0 +1,15 @@
+.menu{
+    background-color: #ffffff ;
+    color: #000000;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #000000;
+}
+.fill-space {
+    flex: 1 1 auto;
+  }
+
+h1{
+    font-weight: bold;
+}
+

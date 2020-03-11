@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Fournisseur } from '../model/fournisseur.model';
+import { Fournisseur } from '../models/fournisseur.model';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +22,7 @@ export class FournisseurService {
     telMobile: new FormControl('',Validators.required),
     telFix: new FormControl('',Validators.required),
     Fax: new FormControl('',Validators.required),
-    email: new FormControl('',Validators.required)
+    email: new FormControl('',[Validators.required,Validators.email])
   });
 
   initializeFormGroup(){

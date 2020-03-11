@@ -1,0 +1,56 @@
+<div class="t">
+    <div>
+        <button mat-flat-button (click)="openDialogg()" color="accent"  style="float: right;">Ajouter Utilisateur</button>
+  
+    <button mat-button (click)="refresh()" class="add"class="mat-cell"  style="float: right;">
+        <mat-icon> refresh</mat-icon></button>
+    </div>
+        <mat-form-field >
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+        </mat-form-field>
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <!-- photo Column -->
+    <ng-container matColumnDef="photo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Photo </th>
+        <td mat-cell *matCellDef="let element"> 
+            <img src="{{element.photo}}" alt="" style="height: 100px;">  </td>
+    </ng-container>
+       
+        
+        <!-- profile Column -->
+        <ng-container matColumnDef="profile">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Profil  </th>
+            <td mat-cell *matCellDef="let element"> {{element.profile}} </td>
+        </ng-container>
+    
+        <!-- statut Column -->
+        <ng-container matColumnDef="statut">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Statut</th>
+            <td mat-cell *matCellDef="let element"> {{element.statut}} </td>
+        </ng-container>
+    
+        <!-- email Column -->
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+            <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+        </ng-container>
+    
+        <!-- username Column -->
+        <ng-container matColumnDef="username">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
+            <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+        </ng-container>
+    
+        <!--Buttons-->
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>Action</th>
+          <td mat-cell *matCellDef="let row">
+            <button mat-icon-button (click)="onEdit(row)"><mat-icon>launch</mat-icon></button>
+            <button mat-icon-button (click)="onDelete(row.id)" color="warn"><mat-icon>delete_outline</mat-icon></button>
+          </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    </div>

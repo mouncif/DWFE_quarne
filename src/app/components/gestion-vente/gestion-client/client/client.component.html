@@ -1,0 +1,51 @@
+<form [formGroup]="service.form" class="normal-form" (submit)="onSubmit()">
+    <mat-grid-list cols="2" rowHeight="400px">
+        <mat-grid-tile>
+            <div class="controles-container">
+                <input type="hidden" formControlName="id">
+
+                <img src="assets/avatar.png" style="height: 100px;"><br>
+                <mat-label>Lien d'image : </mat-label>
+                <mat-form-field floatLabel='never'>
+                   
+
+                    <input matInput type="text" formControlName="photo" placeholder="Lien d'image">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input formControlName="nom_Cl" matInput placeholder="Nom*">
+                    <mat-error>This field is mandatory.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="prenom_Cl" matInput placeholder="Prénom ">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input formControlName="statut" matInput placeholder="Statut">
+                </mat-form-field>
+         
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="controles-container">
+                <mat-form-field>
+                    <input formControlName="tel" matInput placeholder="Tél">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="email" matInput placeholder="Email">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="adresse" matInput placeholder="Adresse">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="ville" matInput placeholder="Ville">
+                </mat-form-field>
+                <div>
+                    <button mat-raised-button color="primary" type="submit"
+                        [disabled]="service.form.invalid">Submit</button>
+                    <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</form>
