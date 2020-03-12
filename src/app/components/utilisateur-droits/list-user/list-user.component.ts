@@ -1,14 +1,14 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { UserComponent } from '../user/user.component';
 import { MatTableDataSource, MatDialog, MatSnackBar } from '@angular/material';
-import { User } from 'src/app/models/user.model';
-import { UserService } from 'src/app/services/user.service';
+import { User } from '../../../models/user.model';
 import { Router } from '@angular/router';
+import { UserService } from '../../../services/user.service';
 
 @Component({
   selector: 'app-list-User',
-  templateUrl: './list-User.component.html',
-  styleUrls: ['./list-User.component.css']
+  templateUrl: './list-user.component.html',
+  styleUrls: ['./list-user.component.css']
 })
 export class ListUserComponent implements OnInit {
 

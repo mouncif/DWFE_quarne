@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Produit } from 'src/app/models/produit.model';
-import { ProduitService } from 'src/app/services/produit.service';
+import { Produit } from '../../../../models/produit.model';
+import { ProduitService } from '../../../../services/produit.service';
 import { Router } from '@angular/router';
 import { MatDialogRef } from '@angular/material';
 

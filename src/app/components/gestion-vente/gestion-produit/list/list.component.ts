@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource, MatSnackBar, MatDialog } from '@angular/material';
-import { ProduitService } from 'src/app/services/produit.service';
+import { ProduitService } from '../../../../services/produit.service';
 import { Router } from '@angular/router';
-import { Produit } from 'src/app/models/produit.model';
+import { Produit } from '../../../../models/produit.model';
 import { ProduitComponent } from '../produit/produit.component';
 
 @Component({

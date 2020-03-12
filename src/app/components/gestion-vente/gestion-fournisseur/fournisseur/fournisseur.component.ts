@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Fournisseur } from 'src/app/models/fournisseur.model';
-import { FournisseurService } from 'src/app/services/fournisseur.service';
+import { Fournisseur } from '../../../../models/fournisseur.model';
+import { FournisseurService } from '../../../../services/fournisseur.service';
 import { MatDialogRef } from '@angular/material';
 import { Router } from '@angular/router';
 
